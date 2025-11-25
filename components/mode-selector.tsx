@@ -15,7 +15,7 @@ export function ModeSelector({ onSelectMode }: ModeSelectorProps) {
                     Infinite Tic-Tac-Toe
                 </h1>
                 <p className="text-lg text-white/70 max-w-md mx-auto">
-                    Un twist strategico sul classico: quando fai la 4a mossa, la prima scompare!
+                    A strategic twist on the classic: when you make your 4th move, the first one disappears!
                 </p>
             </div>
 
@@ -29,13 +29,13 @@ export function ModeSelector({ onSelectMode }: ModeSelectorProps) {
                         <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
                             👥
                         </div>
-                        <h3 className="text-2xl font-bold text-blue-400">2 Giocatori</h3>
+                        <h3 className="text-2xl font-bold text-blue-400">2 Players</h3>
                         <p className="text-white/60">
-                            Sfida un amico in modalità locale. Giocate a turno sullo stesso dispositivo.
+                            Challenge a friend in local mode. Take turns on the same device.
                         </p>
                         <div className="pt-4">
                             <div className="inline-flex items-center gap-2 text-blue-400/80 text-sm">
-                                <span>Clicca per iniziare</span>
+                                <span>Click to start</span>
                                 <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
                             </div>
                         </div>
@@ -53,11 +53,11 @@ export function ModeSelector({ onSelectMode }: ModeSelectorProps) {
                         </div>
                         <h3 className="text-2xl font-bold text-pink-400">vs Computer</h3>
                         <p className="text-white/60">
-                            Metti alla prova le tue abilità contro un'intelligenza artificiale strategica.
+                            Test your skills against a strategic artificial intelligence.
                         </p>
                         <div className="pt-4">
                             <div className="inline-flex items-center gap-2 text-pink-400/80 text-sm">
-                                <span>Clicca per iniziare</span>
+                                <span>Click to start</span>
                                 <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
                             </div>
                         </div>
@@ -67,23 +67,23 @@ export function ModeSelector({ onSelectMode }: ModeSelectorProps) {
 
             {/* Game Rules */}
             <div className="mt-12 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <h4 className="text-lg font-bold text-white/90 mb-3">📜 Regole del Gioco</h4>
+                <h4 className="text-lg font-bold text-white/90 mb-3">📜 Game Rules</h4>
                 <ul className="space-y-2 text-white/70 text-sm">
                     <li className="flex items-start gap-2">
                         <span className="text-emerald-400 mt-0.5">✓</span>
-                        <span>Ogni giocatore può avere <strong className="text-white/90">massimo 3 mosse</strong> sulla griglia</span>
+                        <span>Each player can have <strong className="text-white/90">a maximum of 3 moves</strong> on the grid</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-emerald-400 mt-0.5">✓</span>
-                        <span>Quando fai la <strong className="text-white/90">4a mossa</strong>, la tua <strong className="text-white/90">prima mossa scompare</strong></span>
+                        <span>When you make your <strong className="text-white/90">4th move</strong>, your <strong className="text-white/90">first move disappears</strong></span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-emerald-400 mt-0.5">✓</span>
-                        <span>Vinci allineando <strong className="text-white/90">3 simboli</strong> in orizzontale, verticale o diagonale</span>
+                        <span>Win by aligning <strong className="text-white/90">3 symbols</strong> horizontally, vertically, or diagonally</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-emerald-400 mt-0.5">✓</span>
-                        <span>Il gioco continua <strong className="text-white/90">all'infinito</strong> fino a quando qualcuno vince!</span>
+                        <span>The game continues <strong className="text-white/90">indefinitely</strong> until someone wins!</span>
                     </li>
                 </ul>
             </div>

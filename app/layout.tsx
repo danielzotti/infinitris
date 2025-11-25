@@ -19,8 +19,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Infinite Tic-Tac-Toe | Tris Infinito",
-  description: "Un twist strategico sul classico gioco del tris: quando fai la 4a mossa, la prima scompare!",
+  title: "Infinite Tic-Tac-Toe",
+  description: "A strategic twist on the classic tic-tac-toe game: when you make your 4th move, the first one disappears!",
 };
 
 export default function RootLayout({
