@@ -1,8 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Infinite Tic-Tac-Toe ♾️
 
-## Getting Started
+A strategic twist on the classic Tic-Tac-Toe game! **When you make your 4th move, your first move disappears!** This unique mechanic creates dynamic gameplay that continues infinitely until someone wins.
 
-First, run the development server:
+## 🎮 Game Concept
+
+Infinite Tic-Tac-Toe reimagines the traditional game with a revolutionary constraint: each player can only have a maximum of **3 moves on the board at any time**. When you place your 4th move, your oldest move is automatically removed, creating a constantly evolving strategic landscape.
+
+This simple rule change transforms Tic-Tac-Toe from a simple game that often ends in a draw into a dynamic, strategic battle that can theoretically continue forever until someone outmaneuvers their opponent.
+
+## 📜 Game Rules
+
+1. **3-Move Limit**: Each player can have a maximum of 3 moves on the board simultaneously
+2. **Automatic Removal**: When you make your 4th move, your first (oldest) move disappears from the board
+3. **Win Condition**: Align 3 of your symbols in a row (horizontal, vertical, or diagonal) to win
+4. **Infinite Gameplay**: The game continues indefinitely until someone achieves victory
+5. **Move Tracking**: Each move is numbered (1, 2, 3) so you can see which move will disappear next
+
+## 🎯 Game Modes
+
+### 👥 2 Players Mode
+Play against a friend on the same device! Take turns placing X and O markers, carefully planning your moves to both create winning opportunities and prevent your oldest moves from being removed at critical moments.
+
+**Perfect for:**
+- Face-to-face gameplay
+- Teaching strategy and planning ahead
+- Competitive matches with friends
+
+### 🤖 vs Computer Mode
+Challenge yourself against an AI opponent powered by a strategic algorithm. The computer evaluates the board state and makes intelligent moves to both pursue victory and block your winning attempts.
+
+**Features:**
+- Strategic AI that evaluates multiple moves ahead
+- Natural gameplay with a slight delay for computer moves
+- You play as X, computer plays as O
+- Great for solo practice and skill improvement
+
+## 🛠️ Technical Stack
+
+This project is built with modern web technologies:
+
+- **Next.js 15** - React framework with App Router
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful, accessible component library
+- **TypeScript** - Type-safe development
+- **React Hooks** - State management and game logic
+
+## 🚀 Getting Started
+
+### Installation
+
+First, clone the repository and install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+### Running the Development Server
 
 ```bash
 npm run dev
@@ -14,23 +73,72 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to start playing!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 🎨 Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Beautiful UI**: Modern, gradient-based design with smooth animations
+- **Responsive**: Works perfectly on desktop, tablet, and mobile devices
+- **Visual Feedback**: 
+  - Move numbers displayed on each cell
+  - Fading effect for older moves
+  - Highlighting of winning combinations
+  - Different colors for each player
+- **Intuitive Controls**: 
+  - Easy mode selection
+  - Quick reset button
+  - Change mode option
+- **Smooth Animations**: Hover effects, transitions, and visual polish
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+infinitris/
+├── app/
+│   └── page.tsx              # Main game page
+├── components/
+│   ├── game-board.tsx        # Game board grid
+│   ├── game-cell.tsx         # Individual cell component
+│   ├── game-status.tsx       # Status display (turn, winner)
+│   ├── game-controls.tsx     # Game control buttons
+│   ├── mode-selector.tsx     # Mode selection screen
+│   └── ui/                   # shadcn/ui components
+├── hooks/
+│   └── use-infinite-tic-tac-toe.ts  # Game state and logic
+├── lib/
+│   └── game-logic.ts         # Core game mechanics and AI
+└── ...
+```
 
-## Deploy on Vercel
+## 🧠 Game Strategy Tips
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Since moves disappear after placing your 4th move, consider these strategies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Plan Ahead**: Always think about which move will disappear when you place your next one
+2. **Timing is Key**: Sometimes it's better to delay your winning move if it would disappear next turn
+3. **Force Mistakes**: Make your opponent's oldest move be in a critical position
+4. **Defend Wisely**: Don't waste moves blocking if they'll disappear before your opponent wins
+5. **Move Rotation**: Keep track of your move numbers to predict the board state
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+Built with [Next.js](https://nextjs.org), styled with [Tailwind CSS](https://tailwindcss.com), and components from [shadcn/ui](https://ui.shadcn.com).
+
+---
+
+Enjoy playing Infinite Tic-Tac-Toe! 🎮✨
